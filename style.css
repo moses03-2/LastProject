@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+h3{
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+    font-weight: 600;
+}
+
+h6{
+    font-size: 20px;
+    line-height: 32px;
+    color: #6c6c6c;
+    margin-top: 16px;
+    font-weight: normal
+}
+
+.main-btn{
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #0067f4;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+    z-index: 5;
+}
+
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: transparent;
+    transition: all 0.5s ease;
+    z-index: 100000;
+}
+
+.nav .navbarT{
+    display: none;
+    border: none;
+    outline: none;
+}
+
+.nav .navbarT .togglerI{
+    width: 27px;
+    height: 3px;
+    background-color: #121212;
+    margin: 5px 0;
+    position: relative;
+    display: block;
+    transition: all 0.3s ease-out 0s;
+}
+
+.nav .menubar .menuitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .menubar .menuitem li{
+    margin: 0 15px;
+}
+
+.nav .menubar .menuitem li a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav .menubar .menuitem li a:hover{
+    color: #4F47E4;
+}
+
+.nav .navbarSocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .navbarSocial span{
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 10px;
+    color: #6c6c6c;
+}
+
+.nav .navbarSocial ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .navbarSocial ul li{
+    margin: 0 7px;
+}
+
+.nav .navbarSocial ul li a{
+    color: #6c6c6c;
+    font-size: 22px;
+}
+
+.back{
+    background-image: url(photo-1564069114553-7215e1ff1890.jpg);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.back .overlay{
+    background-image: linear-gradient(rgba(232, 237, 255, 0.9), rgba(239, 254, 255, 0.9) 40%, rgba(254, 255, 244, 0.3) 70%, rgba(255, 255, 255, 0.12));
+    width: 100%;
+    height: 100%;
+}
+
+.back .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.back .wave img{
+    width: 100%;
+    display: block;
+}
+
+.text1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text1 h6{
+    color: #1d1d1d;
+}
+
+.text1 .headerBtn{
+    margin-top: 22px;
+}
+
+.text1 .headerBtn li{
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+
+.text1 .headerBtn li a.main-btn{
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 0;
+    line-height: 50px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+}
+
+.text1 .headerBtn li a.main-btn i{
+    margin-left: 5px;
+    color: #646EE5;
+}
+
+.text1 .headerBtn .btn-one{
+    color: #fff;
+}
+
+.text1 .headerBtn .btn-one::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-position: right center;
+}
+
+.text1 .headerBtn .btn-one:hover::before{
+    background-image: linear-gradient(to left, #523CF1, #A147E4);
+    background-position: left center;
+}
+
+.text1 .headerBtn .btn-two:hover{
+    box-shadow: 0 3px 25px 0 rgba(0,0,0,0.16);
+}
+
+#wrapper{
+    margin: 5rem 7rem 10rem 7rem;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.service h6{
+    margin-bottom: 6rem;
+}
+
+.service .service-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service .service-content .box{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service .service-content .box .box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service .service-content .box .box1 .services{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.service .service-content .box .box1 .services i{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #535CF1;
+}
+
+.service .service-content .box .box1 .services .service-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.service .service-content .serviceBild{
+    width: 40%;
+}
+
+.service .service-content .serviceBild img{
+    width: 100%;
+}
+
+.priser{
+    display: block;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.priser h6{
+    margin-bottom: 6rem;
+}
+
+.priser .table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priser .basic{
+    width: 355px;
+    height: 100%;
+    border: 1px solid #535CF1;
+    border-radius: 20px;
+}
+
+.priser .basic h3{
+    text-align: center;
+    font-weight: 300;
+    padding: 40px 0;
+    background-color: #ecf0f1;
+    transition: all ease 0.6s;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.priser .basic:hover h3{
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+}
+
+.priser .standard h3{
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    color: #fff;
+}
+
+.priser .basic .pris{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.priser .basic .pris .sing{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.priser .basic .pris .valuta{
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.priser .basic .pris .öre{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    vertical-align: bottom;
+}
+
+.priser .basic .pris .månad{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    vertical-align: bottom;
+}
+
+.priser .basic ul li{
+    border-top: 1px solid #ccc;
+    padding: 18px 0;
+    border-bottom: 1px solid #ccc;
+    color: #7f8c8d;
+}
+
+.priser .basic ul li i{
+    padding-right: 5px;
+    color: #535CF1;
+}
+
+.priser .headerBtn{
+    margin: 2rem auto;
+    width: 170px;
+}
+
+.priser .headerBtn a{
+    font-weight: normal;
+    font-size: 18px;
+    border-radius: 50px;
+    outline: medium none;
+    border: 1px solid #3ecc71;
+    color: #1d1d1d;
+}
+
+.priser .basic:hover .headerBtn a{
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+    border: 1px solid #3ecc71;
+}
+
+.priser .standard .headerBtn a{
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+    border: 1px solid #2ecc71;
+}
+
+.kontakta{
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #910AFA), url(photomail.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.kontakta .parallax{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.kontakta .parallax h3, .kontakta .parallax p{
+    color: #fff;
+}
+
+.kontakta .parallax p{
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.kontakta .parallax .mail{
+    background-color: #fff;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 12px 0 12px 15px;
+}
+
+.kontakta .parallax .mail i{
+    color: #535CF1;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.kontakta .parallax .mail input{
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.kontakta .parallax .mail button{
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+
+.kontakt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.kontakt h6{
+    margin-bottom: 3rem;
+}
+
+.kontakt .form{
+    width: 70%;
+}
+
+.kontakt .form .row1, .kontakt .form .row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.kontakt .form .row1 input, .kontakt .form .row1 input{
+    width: 47%;
+    height: 56px;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.kontakt .form textarea{
+    width: 100%;
+    resize: none;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 16px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    padding-top: 15px;
+}
+
+.kontakt .form .headerBtn{
+    margin: 2rem auto;
+    width: 170px;
+}
+
+.kontakt .form .headerBtn a{
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+}
+
+
+
+
+
